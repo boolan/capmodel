@@ -25,6 +25,8 @@ modules:
    path: gen/srv
    parameters:
      buildpack: nodejs_buildpack
+   build-parameters:
+     builder: npm-ci
    requires:
     # Resources extracted from CAP configuration
     - name: cpapp-db
@@ -79,4 +81,5 @@ resources:
            description: View Risks
            role-template-references:
              - $XSAPPNAME.RiskViewer
+
 
