@@ -1,0 +1,25 @@
+{
+    "[development]": {
+        "auth": {
+            "passport": {
+                "strategy": "mock",
+                "users": {
+                    "viewer": {
+                        "password": "initial",
+                        "ID": "viewer",
+                        "roles": [
+                            "RiskViewer"
+                        ]
+                    },
+                    "manager": {
+                        "password": "initial",
+                        "ID": "manager",
+                        "roles": [
+                            "RiskManager"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
